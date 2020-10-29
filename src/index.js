@@ -1,6 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import SendBeanModal from './components/SendBeanModal'
+
+import '../src/styles/normalize.scss';
+import './utils/rem.js';
+
 const name = 'send_bean_modal'
 const version = '1.0.0'
 

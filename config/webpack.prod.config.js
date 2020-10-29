@@ -8,7 +8,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, "../lib/"),
         filename: "index.js",
-        library: 'MyFeed',
+        library: 'SendBeanModal',
         libraryTarget: 'umd', // 采用通用模块定义
         libraryExport: 'default', // 兼容 ES6 的模块系统、CommonJS 和 AMD 模块规范
     },
@@ -72,12 +72,6 @@ module.exports = {
             commonjs2: "react-dom",
             commonjs: "react-dom",
             amd: "react-dom"
-        },
-        "rmc-notification": {
-            root: "Notification",
-            commonjs2: "rmc-notification",
-            commonjs: "rmc-notification",
-            amd: "rmc-notification"
         }
     }
 }
