@@ -6,6 +6,7 @@ import './index.scss'
 
 import { newUserMock, oldUserMock } from '../../api/sendBeanMock'
 
+// TODO: 删除mock数据
 const SendBeanModal = () => {
   const [beanCount, setBeanCount] = useState(0)
   const [userIdentity, setUserIdentity] = useState(false)
@@ -16,7 +17,7 @@ const SendBeanModal = () => {
     () => {
       requestSendBean()
         .then(res => {
-          res = newUserMock
+          // res = newUserMock
           const { success, data } = res
           const { beanCount, userIdentity } = data || {}
           if (success && data) {
