@@ -59,7 +59,8 @@ module.exports = {
         host: 'v.jd.com',
         port: '8811',
         open: true,
-        hot: true
+        hot: true,
+        https: true,
     }
 }
 

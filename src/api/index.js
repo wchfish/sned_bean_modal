@@ -35,8 +35,16 @@ const requestFeed = (appid, params) => {
   })
 }
 
+const requestSendBean = () => {
+  return http.oGet(baseUrl, {
+    appid: 'tejiajie_H5', // 暂时使用十元街的appid
+    functionId: 'vvipclub_paySendBean_send',
+    body: {},
+  })
+}
 
 export {
   requestFeedMock,
   requestFeed,
+  requestSendBean,
 }
